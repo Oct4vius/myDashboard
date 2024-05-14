@@ -8,7 +8,7 @@ import { booleanAttribute, Component, Input, OnInit, } from '@angular/core';
     CommonModule,
   ],
   template: `
-  <h1 class="text-3xl mb-5">{{ title }} - {{ withShadow }}</h1>
+  <h1 class="text-3xl mb-5">{{ title }} {{ withShadow ? withShadow : '' }}</h1>
   `,
 })
 export class TitleComponent implements OnInit {
